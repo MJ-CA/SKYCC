@@ -6,7 +6,7 @@ app = FastAPI()
 async def slack_events(request: Request):
     data = await request.json()
 
-    response = {'text': '슬랙 봇 응답'}
+    response = {'url': "http://...", 'tag': ["개발", "연애"], 'title': "연픽"}
     return response
 
 
